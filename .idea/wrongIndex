@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
+
+
+
+    <title>Ristorante Con Fusion</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="30" width="41"></a>
+
+        <div class="collapse navbar-collapse" id="Navbar">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
+                    About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                        class="fa fa-address-card fa-lg"></span> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-sm-6">
+                <h1 class="row row-header">Ristorante con Fusion</h1>
+                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                    lipsmacking creations will tickle your culinary senses!</p>
+            </div>
+
+            <div class="col col-sm-3 align-self-center">
+                <img src="img/logo.png" class="img-fluid" alt="logo"></div>
+            <div class="col-sm-3" id="reserve-button">
+                <a href="#reserve-form" class="btn btn-sm btn-block bg-warning text-white">Reserve Table</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div class="container">
+    <div class="row-content align-items-center">
+        <div class="col-sm-4 col-md-3 flex-last">
+            <h3>Our Lipsmacking Culinary Creations</h3>
+        </div>
+        <div class="col-sm col-md flex-first">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                     src="img/uthappizza.png" alt="Uthappizza">
+                <div class="media-body">
+                    <h2 class="mt-0">Uthappizza
+                        <span class="badge badge-danger">HOT</span>
+                        <span class="badge badge-pill badge-default">$4.99</span>
+                    </h2>
+                    <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and
+                        Italian pizza, topped with Cerignola olives, ripe vine
+                        cherry tomatoes, Vidalia onion, Guntur chillies and
+                        Buffalo Paneer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--In this task you will be formatting the content in the second row of the page. The formatting should result in the following:
+
+Format the content of the second column with the media class together with the media object class. Use the buffet.png image file provided for you in the img folder.
+The image should displayed to the right of the content description. See figure below.
+Add a badge with the word “NEW” to the content as shown in the figure below.-->
+<div class="container">
+    <div class="row-content align-items-center">
+        <div class="col-sm-4 col-md-3 flex-first">
+            <h3>This Month's Promotions</h3>
+        </div>
+        <div class="col-sm col-md flex-last">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center float-right"
+                     src="img/buffet.png" alt="Buffet" id="buffet">
+                <div class="media-body">
+                    <h2 class="mt-0">Weekend Grand Buffet
+                        <span class="badge badge-danger">NEW</span>
+                    </h2>
+                    <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
+                        six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
+                        $19.99 per person
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row-content align-items-center">
+    <div class="col-sm-4 col-md-3 flex-last">
+        <h3>Meet our Culinary Specialists</h3>
+    </div>
+    <div class="col-sm col-md flex-first">
+        <div class="media">
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+                 src="img/alberto.png" alt="Alberto Somayya">
+            <div class="media-body">
+                <h2 class="mt-0">Alberto Somayya</h2>
+                <h4>Executive Chef</h4>
+                <p class="hidden-xs-down">Award winning three-star Michelin chef with wide
+                    International experience having worked closely with
+                    whos-who in the culinary world, he specializes in
+                    creating mouthwatering Indo-Italian fusion experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+In this task you will be adding another content row to the page. The content row should contain the following:
+
+You should create a reservation form for the user to reserve a table. The reservation form should contain a field using radio that enables the users to specify the number of guests (1-6).
+The form should contain fields to specify the date and time of the reservation. The fields should contain appropriate placeholder information and font-awesome icons to identify the purpose of the fields. Use the input-group addons for adding the icons.
+The form should contain a button named Reserve to initiate reservation of the table.
+The form should be enclosed inside a card with the heading "Reserve a Table". The card should occupy 8 columns and centred in the row for small to extra-large screens. For extra-small screens, the card should span the entire row.
+
+-->
+<div class="card col-8 col-xs-12 mx-auto">
+    <h2 class="card-header bg-warning text-white">Reserve a Table</h2>
+    <div class="card-block">
+        <div class="form">
+            <div class="form-vertical" role="form" id="reserve-form">
+                <dl class="row">
+                    <dt class="col-sm-4">Number of Guests</dt>
+                    <dd class="col-sm-8">
+
+                        <div class="form-group row">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                           id="Guest1"
+                                           value="option1">
+                                    1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                           id="Guest2" value="option2">
+                                    2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                           id="Guest3" value="option3">
+                                    3
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                           id="Guest4" value="option4">
+                                    4
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input"
+                                           name="optionsRadios" id="Guest5" value="option5">
+                                    5
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input"
+                                           name="optionsRadios" id="Guest6" value="option6">
+                                    6
+                                </label>
+                            </div>
+                        </div>
+                    </dd>
+
+                    <dt class="col-sm-4">Date and Time</dt>
+                    <dd class="col-sm-8">
+
+
+                        <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+                        <div class="bootstrap-iso">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <form method="post">
+                                            <div class="form-group ">
+                                                <label class="control-label " for="date">
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar">
+                                                        </i>
+                                                    </div>
+                                                    <input class="form-control" id="date" name="date"
+                                                           placeholder="MM/DD/YYYY" type="text"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+
+                    <dd>
+
+
+
+
+                    </dd>
+                </dl>
+
+                <button type="submit" class="btn btn-primary"> Reserve</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    121, Clear Water Bay Road<br>
+                    Clear Water Bay, Kowloon<br>
+                    HONG KONG<br>
+                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                    <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                </address>
+            </div>
+            <div class="col col-sm-4 align-self-center">
+                <div style="text-align: center">
+                    <a class="btn bt-social-icon btn-google-plus" href="http://google.com/+"><i
+                            class="fa fa-google-plus"></i></a>
+                    <a class="btn bt-social-icon btn-facebook"
+                       href="http://www.facebook.com/profile.php?id="><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn bt-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a class="btn bt-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn bt-social-icon btn-youtube" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                    <a class="btn bt-social-icon" href="mailto:"><i
+                            class="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2015 Ristorante Con Fusion</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/tether/dist/js/tether.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="confus.js"></script>
+
+
+<!-- Include Date Range Picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+myForm
+<div class="row row-content align-items-center">
+<div class="col-sm-8 container">
+    <div class="card">
+        <h3 class="card-header bg-warning text-white" id="ReserveTable">Reserve a Table</h3>
+        <div class="card-block">
+            <div class="row form-group">
+                <div class="col-sm-2 pr-3">
+                    Number of Guests
+                </div>
+                <div class="col-sm-10 d-flex">
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 1
+                    </div>
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 2
+                    </div>
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 3
+                    </div>
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 4
+                    </div>
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 5
+                    </div>
+                    <div class="pr-3">
+                        <input type="radio" name="table"> 6
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-2 pr-0">
+                    Section
+                </div>
+                <div class="col-10 row">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-success active">
+                            <input type="checkbox" checked autocomplete="off">Non-Smoking
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="checkbox" autocomplete="off">Smoking
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-2 pr-0">
+                    Date and Time
+                </div>
+                <div class="col-10 row">
+                    <div class="input-group col-sm-5">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control"  placeholder="Date">
+                    </div>
+                    <div class="input-group col-sm-5">
+                        <div class="input-group-addon">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <input type="text" class="form-control"  placeholder="Time">
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-2 pr-0">
+                </div>
+                <div class="col-10">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary">Reserve</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
