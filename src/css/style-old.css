@@ -1,3 +1,8 @@
+body {
+    padding: 0;
+    z-index: 0;
+}
+
 .row-header {
     margin: 30px auto;
     padding: 0px auto;
@@ -6,6 +11,12 @@
 .img-fluid {
     padding-top: 80px;
 
+}
+.logo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 #reserve-button {
@@ -39,11 +50,6 @@ address {
     color: #0F0F0F
 }
 
-body {
-    padding: 0px 0px 0px 0px;
-    z-index: 0;
-}
-
 .navbar-inverse {
     background-color: #512DA8;
 }
@@ -70,8 +76,8 @@ body {
 
 .carousel-item img {
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 40px;
+    bottom: 40px;
     min-height: 300px;
 }
 
@@ -79,4 +85,11 @@ body {
     right:0px;
     position: absolute;
     bottom: 0px;
+}
+
+.social-buttons {
+    display: flex;
+    align-self: center;
+    text-align: center; 
+    margin: 15px 0;
 }
