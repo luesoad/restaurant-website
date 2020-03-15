@@ -1,7 +1,7 @@
 # RestaurantWebsite
 
-This website was originally created for the Bootstrap Course of the Hong Kong University of Science and Technology. Now I am including angular to the project.
-
+This website was originally created for the Bootstrap Course of the Hong Kong University of Science and Technology. 
+It is now in progress and has a lot of bugs, since I started including angular to the project.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
