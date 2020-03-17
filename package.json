@@ -17,7 +17,6 @@
     "@angular/compiler": "^9.0.6",
     "@angular/core": "^9.0.6",
     "@angular/forms": "^9.0.6",
-    "@angular/http": "^7.2.16",
     "@angular/platform-browser": "^9.0.6",
     "@angular/platform-browser-dynamic": "^9.0.6",
     "@angular/router": "^9.0.6",
@@ -26,14 +25,16 @@
     "ngx-bootstrap": "^5.5.0",
     "rxjs": "^6.5.4",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.10.2"
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.900.6",
     "@angular/compiler-cli": "^9.0.6",
     "@types/jasmine": "3.5.9",
-    "@types/node": "^13.9.1",
+    "@types/node": "^12.11.1",
     "angular-cli": "1.0.0-beta.28.3",
-    "codelyzer": "~5.2.1",
+    "codelyzer": "^5.1.2",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "4.4.1",
