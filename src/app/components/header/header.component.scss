@@ -5,3 +5,7 @@
 .nav-collapse .li {
     list-style-type: none;
 }
+
+.dropdown-toggle::after {
+  display: none;
+}
