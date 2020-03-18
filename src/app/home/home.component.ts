@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -6,26 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-/*   $(document).ready(function(){
-    $("#mycarousel").carousel({ interval: 2000 });
-    $("#carousel-pause").click(function(){
-            if ($("#carousel-button").children("span").hasClass('fa-pause')){
-                $("#mycarousel").carousel('pause');
-                $("#carousel-button").children("span").removeClass('fa-pause');
-                $("#carousel-button").children("span").addClass('fa-play');
-            }
-            else if ($("#carousel-button").children("span").hasClass('fa-play')){
-                $("#mycarousel").carousel('cycle');
-                $("#carousel-button").children("span").removeClass('fa-play');
-                $("#carousel-button").children("span").addClass('fa-pause');
-            }
-        });
-});
- */
-/* ngOnInit() {
-    $('#ReserveTable').modal();
-  } */
+  closeResult: string;
 
+  constructor(private modalService: NgbModal) {}
 
+  open(content) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
 
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return  `with: ${reason}`;
+    }
+  }
 }

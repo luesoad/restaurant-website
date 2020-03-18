@@ -11,7 +11,7 @@
                     <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
                 </div>
                 <div class="col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-sm btn-warning" data-toggle="modal" data-target="#ReserveTable">
+                    <button type="button" class="btn btn-block btn-sm btn-warning" (click)="open(content)">
                         Reserve Table
                     </button>
                 </div>
@@ -19,12 +19,14 @@
         </div>
       </header>
 
-<div id="ReserveTable" class="modal fade" role="dialog">
+<ng-template #content let-modal>
   <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
               <h4 class="modal-title">Reserve a Table </h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button"  class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
               <div class="container-fluid">
@@ -76,12 +78,15 @@
               Date and Time
           </div>
           <div class="col-10 row">
-              <div class="input-group col-sm-5">
-                  <div class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Date">
+            <div class="form-group">
+              <label for="date">Date of birth</label>
+              <div class="input-group">
+                <input id="date" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+                </div>
               </div>
+            </div>
               <div class="input-group col-sm-5">
                   <div class="input-group-addon">
                       <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -93,15 +98,15 @@
       </div>
   </div>
 </div>
-</div>
+
   <div class="modal-footer">
       <div class="col-10">
-          <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+          <button type="button" class="btn btn-default btn-sm" (click)="modal.dismiss('Cross click')">Cancel
           </button>
-          <button type="button" class="btn btn-primary">Reserve</button>
+          <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Reserve</button>
       </div>
   </div>
-
+</ng-template>
 <div class="row row-content">
   <div class="col">
       <div id="mycarousel" class="carousel slide" data-ride="carousel">
