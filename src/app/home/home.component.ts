@@ -7,6 +7,7 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  images = ['assets/img/uthappizza.png', 'assets/img/buffet.png', 'assets/img/alberto.png'];
   closeResult: string;
 
   constructor(private modalService: NgbModal) {}
