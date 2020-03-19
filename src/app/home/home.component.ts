@@ -8,6 +8,7 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent {
   images = ['assets/img/uthappizza.png', 'assets/img/buffet.png', 'assets/img/alberto.png'];
+  time = {hour: 18, minute: 30};
   closeResult: string;
 
   constructor(private modalService: NgbModal) {}
