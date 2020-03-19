@@ -5,7 +5,7 @@ body {
 
 .row-header {
     margin: 30px auto;
-    padding: 0px auto;
+    padding: 0 auto;
 }
 
 .img-fluid {
@@ -33,7 +33,7 @@ body {
 
 .footer {
     background-color: #D1C4E9;
-    margin: 0px auto; 
+    margin: 0px auto;
     padding: 20px 0px 0px;
 }
 
@@ -41,7 +41,7 @@ body {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     background: #9575CD;
-    color: floralwhite; 
+    color: floralwhite;
 }
 
 address {
@@ -90,6 +90,10 @@ address {
 .social-buttons {
     display: flex;
     align-self: center;
-    text-align: center; 
+    text-align: center;
     margin: 15px 0;
+}
+
+.date-picker {
+  width: 90%;
 }
