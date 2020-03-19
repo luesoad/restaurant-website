@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  z-index: 0;
+}
+
+.img-fluid {
+  padding-top: 80px;
+}
+
+.row-content {
+  margin: 0 auto;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+address {
+  font-size: 80%;
+  margin: 0;
+  color: #0F0F0F
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-image img {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  min-height: 300px;
+}

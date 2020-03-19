@@ -1,0 +1,37 @@
+<span class="navbar-text">
+      <button class="btn btn-lg btn-outline-primary" (click)="open(login)">
+        <span class="fa fa-sign-in"></span> Login</button>
+    </span>
+
+<ng-template #login let-modal>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Login </h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')"><span
+        aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-body">
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" class="form-control form-control-sm mr-1" id="email"
+                 placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="password">Password</label>
+          <input type="password" class="form-control form-control-sm mr-1" id="password"
+                 placeholder="Password">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default btn-sm" (click)="modal.dismiss('Cross click')">Cancel</button>
+      <button (click)="modal.close('Save click')" class="btn btn-primary btn-sm">Sign in</button>
+    </div>
+  </div>
+</ng-template>

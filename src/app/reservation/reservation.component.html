@@ -1,0 +1,82 @@
+<button type="button" class="btn btn-block btn-sm btn-warning" (click)="open(reservation)">
+  Reserve Table
+</button>
+
+<ng-template #reservation let-modal>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Reserve a Table </h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="row form-group">
+        <div class="col-sm-2 col-md-4 pr-3">
+          Number of Guests
+        </div>
+        <div class="col-sm-10 col-md-8 d-flex">
+          <div class="pr-3">
+            <input type="radio" name="table"> 1
+          </div>
+          <div class="pr-3">
+            <input type="radio" name="table"> 2
+          </div>
+          <div class="pr-3">
+            <input type="radio" name="table"> 3
+          </div>
+          <div class="pr-3">
+            <input type="radio" name="table"> 4
+          </div>
+          <div class="pr-3">
+            <input type="radio" name="table"> 5
+          </div>
+          <div class="pr-3">
+            <input type="radio" name="table"> 6
+          </div>
+        </div>
+
+      </div>
+      <div class="row form-group">
+        <div class="col-2">
+          Section
+        </div>
+        <div class="col-10">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-success active">
+              <input type="radio" name="options" id="option1" class="mr-2" checked>Non-Smoking
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" class="mr-2">Smoking
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <p>
+        Date and Time
+      </p>
+
+      <div class="form-group">
+        <div class="input-group">
+          <input id="date" class="form-control" placeholder="Date" name="dp" ngbDatepicker
+                 #dp="ngbDatepicker" class="datepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button">
+              <i class="far fa-calendar-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p>Time</p>
+      <ngb-timepicker [(ngModel)]="time" [hourStep]="hourStep" [minuteStep]="minuteStep"></ngb-timepicker>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default btn-sm" (click)="modal.dismiss('Cross click')">Cancel
+    </button>
+    <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Reserve</button>
+  </div>
+</ng-template>

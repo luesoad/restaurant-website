@@ -1,81 +1,88 @@
-body {
-    padding: 0;
-    z-index: 0;
-}
+// Colors
 
-.row-header {
-    margin: 30px auto;
-    padding: 0px auto;
-}
+$primary:               #B8B8B8;
+$secondary:             #777;
+$white:                 #fff;
 
-.img-fluid {
-    padding-top: 80px;
+$twitter:               #00acee;
+$pinterest:             #c8232c;
 
-}
-.logo {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
+//
+// Variables
+// --------------------------------------------------
 
-#reserve-button {
-    padding-top: 110px;
+$bootstrap-sass-asset-helper: false !default;
 
-}
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
 
-.row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
-}
+$gray-base:              #1B1B1B;
+$gray-darker:            #333;
+$gray-dark:              #555;
+$gray:                   $secondary;
+$gray-light:             #999;
+$gray-lighter:           #e9ecef;
 
-.jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background: #9575CD;
-    color: floralwhite; 
-}
+$brand-primary:          $primary;
 
-address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0F0F0F
-}
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $gray-dark !default;
+
+//** Global textual link color.
+$link-color:            $gray;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $secondary;
+//** Link hover decoration.
+$link-hover-decoration: none;
 
 
-.tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
 
-.carousel {
-    background: #512DA8;
-}
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-.carousel-item {
-    height: 300px;
-}
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-.carousel-item img {
-    position: absolute;
-    left: 40px;
-    bottom: 40px;
-    min-height: 300px;
-}
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
 
-#carousel-button {
-    right:0px;
-    position: absolute;
-    bottom: 0px;
-}
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
 
-.social-buttons {
-    display: flex;
-    align-self: center;
-    text-align: center; 
-    margin: 15px 0;
-}
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

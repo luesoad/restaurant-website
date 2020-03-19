@@ -10,6 +10,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HeaderComponent } from './components/header/header.component';
     AboutusComponent,
     ContactusComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CarouselComponent,
+    ReservationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
