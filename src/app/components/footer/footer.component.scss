@@ -1,5 +1,15 @@
 .footer {
     background-color: #D1C4E9;
-    margin: 0px auto; 
-    padding: 20px 0px 0px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+
+  &__address {
+    font-size: 80%;
+    margin: 0;
+    color: #0F0F0F
+  }
+
+  &__social-icons {
+    text-align: center;
+  }
 }
