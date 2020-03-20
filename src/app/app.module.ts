@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     CarouselComponent,
     ReservationComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
