@@ -1,5 +1,7 @@
+@import 'src/assets/private/sass/base.scss';
+
 .navbar-inverse {
-    background-color: #512DA8;
+    background-color: $purple;
 }
 
 .nav-collapse .li {
@@ -12,8 +14,8 @@
 
 .jumbotron {
   padding: 70px 30px 70px 30px;
-  margin: 0px auto;
-  background: #9575CD;
+  margin: 0 auto;
+  background: $secondary;
   color: floralwhite;
 }
 

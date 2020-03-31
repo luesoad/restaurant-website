@@ -1,5 +1,7 @@
+@import 'src/assets/private/sass/base.scss';
+
 .footer {
-    background-color: #D1C4E9;
+    background-color: $secondary;
     margin: 0 auto;
     padding: 20px 0 0;
 

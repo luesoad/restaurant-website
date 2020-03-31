@@ -1,11 +1,12 @@
+@import 'src/assets/private/sass/base.scss';
+
 .carousel {
-     background: #512DA8;
+     background: $primary;
  }
 
 .carousel-item {
   height: 300px;
 }
-
 
 .carousel-image img {
   left: 40px;
